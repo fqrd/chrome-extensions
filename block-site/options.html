@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">
+	<link rel="stylesheet" href="style.css">
+	<title>Block Site</title>
+</head>
+<body>
+    <h1 class="uppercase">Block Site</h1>
+    <div>
+        <h2>Add new domains.</h2>
+        <section>
+            <textarea id="add-area" placeholder="Add new sites to be blocked: &#10;facebook.com&#10;youtube.com&#10;xxx.com&#10;bet365.com" rows="10" cols="50" spellcheck="false"></textarea>
+        </section>
+
+        <button id="forever-btn" class="danger-btn">Block forever</button>
+        <button id="temporary-btn" class="default-btn">Block temporarily</button>
+
+        <section class="hidden">
+            <input id="date-deadline-input" type="date" name="date-deadline">
+            <input id="time-deadline-input" type="time" name="time-deadline">
+        </section>
+
+		
+        <p id="display-deadline"></p>
+		
+        <h2>Blocked temporarily.</h2>
+        <section>
+			<textarea id="active-area" placeholder="Sites listed here are blocked until the selected date." rows="10" cols="50" spellcheck="false"></textarea>
+        </section>
+		
+		<section class="hidden">
+			<button id="lock-btn" class="warning-btn">Lock </button>
+		</section>
+		
+        <button id="update-btn" class="hidden">Update</button>
+
+        <h2>Blocked forever.</h2>
+        <section>
+            <textarea id="forever-area" placeholder="Sites listed here are blocked forever." rows="10" cols="50" spellcheck="false"></textarea>
+        </section>
+    </div>
+    <script src="options.js"></script>
+</body>
+</html>

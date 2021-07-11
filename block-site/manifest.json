@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+    "name": "Private Block Site",
+    "description": "Blocks access to specified website. Respecting your privacy.",
+    "version": "1.2",
+    "options_page": "options.html",
+    "permissions": ["storage", "tabs"],
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+    },
+    "incognito": "spanning",
+    "icons": {
+        "48": "/icons/icon48.png",
+        "96": "/icons/icon96.png"
+      }
+  }

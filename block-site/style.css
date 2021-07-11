@@ -1,0 +1,17 @@
+body{
+	background-color: #333;
+	color: #ccc;
+}
+
+.uppercase{
+	text-transform: uppercase;
+}
+
+textarea{
+	background-color: #222;
+	color: #ccc;
+}
+
+.hidden{
+    display: none;
+}
